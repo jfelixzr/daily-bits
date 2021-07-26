@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Open+Sans&display=swap");
+:root {
+  --color-purple: #7f5af0;
+  --color-red: #ef4565;
+  --color-white: #ffffff;
+  --color-purple-light: #a786df;
+  --color-black: #16161a;
+  --color-green: #2cb67d;
+  --color-darkgray: #232e35;
+  --color-gray: #94a1b2;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: var(--color-black);
+  font-family: "Nunito", sans-serif;
+  color: var(--color-white);
+}
+
+.top-text {
+  color: var(--color-white);
+  text-align: center;
+  padding: 0.5rem 2rem;
+  font-size: 1.6rem;
+}
+
+.title {
+  color: var(--color-white);
+  margin-left: 1rem;
+  font-size: 2.2rem;
+}
+
+.text-white {
+  margin-top: 0.2rem;
+  font-size: 1.6rem;
+}
+
+.logos p {
+  font-size: 1.6rem;
+}
+
+.container-categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.categories {
+  color: var(--color-white);
+  text-decoration: none;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.logos img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 95px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border: var(--color-white) solid 9px;
+  border-radius: 50%;
+}
+
+.border-green {
+  border: var(--color-green) solid 0.9rem !important;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.icon path {
+  fill: var(--color-white);
+}
+
+.container-inf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.container-inf h3 {
+  -webkit-margin-before: unset;
+          margin-block-start: unset;
+  -webkit-margin-after: unset;
+          margin-block-end: unset;
+          font-size: 2rem;
+}
+
+.container-inf p {
+  -webkit-margin-before: unset;
+          margin-block-start: unset;
+  -webkit-margin-after: unset;
+          margin-block-end: unset;
+  font-size: 1.5rem;
+}
+
+.container-inf img {
+  width: 100px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.container-options {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 9px;
+}
+
+.logout-btn {
+  color: var(--color-red);
+  background-color: unset;
+  padding:10px;
+  
+  margin: auto;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--color-darkgray);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 3.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  float: left;
+  list-style: none;
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .footer-link:hover,
+#footer.footer-link:focus,
+.icon:hover {
+  color: var(--color-green);
+}
+
+.footer-link:hover svg path,
+.footer-link:focus svg path {
+  fill: var(--color-green);
+}
+
+#footer .focus,
+#footer .focus svg path {
+  color: var(--color-green);
+  fill: var(--color-green);
+}
+
+#days {
+  background-color: unset;
+  color: white;
+  padding: 0.5rem 2.5rem 0.5rem 0.9rem;
+  background-repeat: no-repeat;
+}
+
+.stats-container {
+  width: 95%;
+  padding: 0 1.6rem;
+  border-radius: 1rem;
+  border: solid 0.2rem var(--color-gray);
+  margin: 1.5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+   
+  
+}
+
+.times,
+.response,
+.right-response,
+.wrong-response {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1.6rem;
+}
+
+.times span,
+.response span,
+.right-response span,
+.wrong-response span {
+  margin: 0rem 0.5rem;
+}
+
+.times span svg {
+  fill: var(--color-gray);
+}
+
+.response span svg,
+.right-response span svg,
+.wrong-response span svg {
+  stroke: var(--color-gray);
+}
+
+.times,
+.response,
+.right-response,
+.wrong-response,
+#study-times,
+#count-questions {
+  color: var(--color-white);
+}
+
+#count-r-answer {
+  color: var(--color-green);
+}
+
+#count-w-answer {
+  color: var(--color-red);
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+
+
+.container-pb {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+.progress-bar {
+  padding: 10px;
+}
+
+.progress {
+  margin: 5px auto;
+  padding: 0;
+  width: 75%;
+  height: 12px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 25px;
+}
+
+.bar {
+  position: relative;
+  float: left;
+  min-width: 0%;
+  height: 100%;
+  background: #2cb67d;
+  border-radius: 25px;
+}
+
+
+
+.large {
+  width: 156px;
+  height: 40px;
+}
+
+.mid {
+  width: 136px;
+  height: 40px;
+}
+
+.small {
+  width: 68px;
+  height: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  #options-images {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 150px 150px;
+        grid-template-columns: 150px 150px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
